@@ -158,7 +158,6 @@ namespace _20250109
                         var query10 = from b in db.Autok
                                       where b.Rendszam == rendszam3
                                       select b;
-                        //delete the selected rendszam from the db
                         foreach (var item in query10)
                         {
                             db.Autok.Remove(item);
